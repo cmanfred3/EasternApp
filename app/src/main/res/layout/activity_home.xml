@@ -1,0 +1,319 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#4caf50">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EASTERN"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/cometwhite"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/menuwhite" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_soccerMen"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/soccerapp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/soccerapp"
+                android:layout_alignBottom="@+id/SoccerDescrip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/SoccerHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="Soccer"
+                android:textSize="24sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/SoccerDescrip"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/SoccerHeader"
+                android:layout_alignStart="@+id/SoccerHeader"
+                android:layout_below="@+id/SoccerHeader"
+                android:layout_marginTop="8dp"
+                android:text="Three seniors lead the way this year, looking to avenge last years sectional loss."
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/soccerTeamInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_alignLeft="@+id/SoccerDescrip"
+                android:layout_alignStart="@+id/SoccerDescrip"
+                android:layout_below="@+id/SoccerDescrip"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@null"
+                android:onClick="clickSoccerTeamInfo"
+                android:text="Team Info" />
+
+            <Button
+                android:id="@+id/soccerRoster"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Roster"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/soccerTeamInfo"
+                android:layout_toEndOf="@+id/soccerTeamInfo"
+                android:layout_alignTop="@+id/soccerTeamInfo"
+                android:background="@null"/>
+
+            <Button
+                android:id="@+id/soccerSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Schedule"
+                android:layout_toRightOf="@+id/soccerRoster"
+                android:layout_toEndOf="@+id/soccerRoster"
+                android:layout_alignTop="@+id/soccerRoster"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_football"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/jpapp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/jpapp"
+                android:layout_alignBottom="@+id/footballDescrip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/footballHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="Football"
+                android:textSize="24sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/footballDescrip"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/footballHeader"
+                android:layout_alignStart="@+id/footballHeader"
+                android:layout_below="@+id/footballHeader"
+                android:layout_marginTop="8dp"
+                android:text="Coach leads a young team into the new season with cautious optimism."
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/footballTeamInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_alignLeft="@+id/footballDescrip"
+                android:layout_alignStart="@+id/footballDescrip"
+                android:layout_below="@+id/footballDescrip"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Team Info"
+                android:background="@null"/>
+
+            <Button
+                android:id="@+id/footballRoster"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Roster"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/footballTeamInfo"
+                android:layout_toEndOf="@+id/footballTeamInfo"
+                android:layout_alignTop="@+id/footballTeamInfo"
+                android:background="@null"/>
+
+            <Button
+                android:id="@+id/footballSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Schedule"
+                android:layout_toRightOf="@+id/footballRoster"
+                android:layout_toEndOf="@+id/footballRoster"
+                android:layout_alignTop="@+id/footballRoster"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_volleyball"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/vball"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/vball"
+                android:layout_alignBottom="@+id/vballDescrip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/vballHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="Volleyball"
+                android:textSize="24sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/vballDescrip"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/vballHeader"
+                android:layout_alignStart="@+id/vballHeader"
+                android:layout_below="@+id/vballHeader"
+                android:layout_marginTop="8dp"
+                android:text="Returning three starters should help the Comet girls get off to a great start this season."
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/vballTeamInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_alignLeft="@+id/vballDescrip"
+                android:layout_alignStart="@+id/vballDescrip"
+                android:layout_below="@+id/vballDescrip"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Team Info"
+                android:background="@null"/>
+
+            <Button
+                android:id="@+id/vballRoster"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Roster"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/vballTeamInfo"
+                android:layout_toEndOf="@+id/vballTeamInfo"
+                android:layout_alignTop="@+id/vballTeamInfo"
+                android:background="@null"/>
+
+            <Button
+                android:id="@+id/vballSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Schedule"
+                android:layout_toRightOf="@+id/vballRoster"
+                android:layout_toEndOf="@+id/vballRoster"
+                android:layout_alignTop="@+id/vballRoster"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
