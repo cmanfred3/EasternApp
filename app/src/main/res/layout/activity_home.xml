@@ -109,21 +109,21 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@null"
-                android:onClick="clickSoccerTeamInfo"
-                android:text="Team Info" />
+                android:text="Team Info"
+                android:onClick="soccerTeamInfo"/>
 
             <Button
                 android:id="@+id/soccerRoster"
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignTop="@+id/soccerTeamInfo"
                 android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
-                android:text="Roster"
-                android:layout_alignParentBottom="true"
-                android:layout_toRightOf="@+id/soccerTeamInfo"
                 android:layout_toEndOf="@+id/soccerTeamInfo"
-                android:layout_alignTop="@+id/soccerTeamInfo"
-                android:background="@null"/>
+                android:layout_toRightOf="@+id/soccerTeamInfo"
+                android:background="@null"
+                android:text="Roster" />
 
             <Button
                 android:id="@+id/soccerSchedule"
