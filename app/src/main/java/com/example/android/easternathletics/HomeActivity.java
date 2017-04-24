@@ -12,6 +12,7 @@ import static android.os.Build.VERSION_CODES.M;
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 import static com.example.android.easternathletics.R.layout.activity_home;
 import static com.example.android.easternathletics.R.layout.activity_soccer_team_info;
+import static com.example.android.easternathletics.R.layout.activity_soccer_roster;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -38,5 +39,9 @@ public class HomeActivity extends AppCompatActivity {
 
     public void soccerTeamInfo(View v) {
         startActivity(new Intent(HomeActivity.this, SoccerTeamInfo.class));
+    }
+
+    public void SoccerRoster(View v) {
+        startActivity(new Intent(HomeActivity.this, SoccerRoster.class));
     }
 }

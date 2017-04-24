@@ -6,14 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class SoccerTeamInfo extends AppCompatActivity {
+public class SoccerRoster extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_soccer_team_info);
-    }
-    public void SoccerRoster(View v) {
-        startActivity(new Intent(SoccerTeamInfo.this, SoccerRoster.class));
+        setContentView(R.layout.activity_soccer_roster);
     }
 }
