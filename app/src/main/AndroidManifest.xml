@@ -18,7 +18,7 @@
         </activity>
         <activity android:name=".SoccerTeamInfo" />
         <activity android:name=".SoccerRoster" />
-
+        <activity android:name=".SoccerBoysSchedule"></activity>
     </application>
 
 </manifest>
